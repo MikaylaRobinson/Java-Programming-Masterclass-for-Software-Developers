@@ -64,6 +64,45 @@ public class Main {
         if (topScore > 100)
             System.out.println("You got the high score!");
 
+        // and operator
+        int secondtopscore = 81;
+        if ((topScore > secondtopscore) && (topScore < 100))
+            System.out.println("Greater than second top score and less than 100");
+
+        // or operator
+        if ((topScore > 90) || (secondtopscore <= 90))
+            System.out.println("One of these tests is true");
+
+        int newValue = 50;
+        if (newValue == 50)
+            System.out.println("This is true");
+
+        boolean isCar = false;
+        if (isCar == true)
+            System.out.println("This will not work");
+
+        // Assigning a value(wasCar) based on the evaluation of something else(isCar)
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar)
+            System.out.println("wasCar is true");
+
+        // Challenge
+        // 1. Create a double variable with a value of 20
+        double myFirstVariable = 20;
+        // 2. Create a second double variable with a value of 80
+        double mySecondVariable = 80;
+        // 3. Add both numbers and multiply by 25
+        double combinedValue = (myFirstVariable + mySecondVariable) * 25;
+        // 4. Find the remainder of the combinedValue divided by 40
+        double remainder = combinedValue % 40;
+        // 5. Display "Total was over the limit" if remainder is equal to 20 or less
+        if (remainder <= 20)
+            System.out.println("Total was over the limit");
+
+
+
+
 
     }
 }
