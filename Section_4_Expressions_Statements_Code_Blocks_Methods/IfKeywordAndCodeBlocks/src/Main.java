@@ -23,7 +23,16 @@ public class Main {
         System.out.println("Your final score was " + highScore);
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition();
+        displayHighScorePosition("Frank", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(900);
+        displayHighScorePosition("Franny", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(400);
+        displayHighScorePosition("Freida", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(50);
+        displayHighScorePosition("Fred", highScorePosition);
 
     }
     // This is my method that I can use above with varying parameters
@@ -38,15 +47,15 @@ public class Main {
 
 
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
-        System.out.println(playerName + "managed to get into position " + highScorePosition + " on the high score table");
+        System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score table");
     }
 
     public static int calculateHighScorePosition(int score) {
-        if (score > 1000) {
+        if (score >= 1000) {
             return 1;
-        } else if (score > 500 && score < 1000) {
+        } else if (score >= 500) {
             return 2;
-        } else if (score > 100 && score < 500) {
+        } else if (score >= 100) {
             return 3;
         } else {
             return 4;}
