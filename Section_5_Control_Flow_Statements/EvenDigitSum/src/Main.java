@@ -13,7 +13,7 @@ public class Main {
             if (lastDigit % 2 == 0) {
                 sum += lastDigit;
             }
-            
+
             number /= 10;
         }
         return sum;
