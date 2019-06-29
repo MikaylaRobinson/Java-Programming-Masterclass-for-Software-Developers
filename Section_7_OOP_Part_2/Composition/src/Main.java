@@ -11,8 +11,6 @@ public class Main {
         // Using composition lets us make the PC out of each component
         // Each component has its own methods which then become part of the PC
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
-        thePC.getMonitor().drawPixelAt(1500,1200,"red");
-        thePC.getMotherboard().loadProgram("Windows 1.0");
-        thePC.getTheCase().pressPowerButton();
+        thePC.powerUp();
     }
 }
