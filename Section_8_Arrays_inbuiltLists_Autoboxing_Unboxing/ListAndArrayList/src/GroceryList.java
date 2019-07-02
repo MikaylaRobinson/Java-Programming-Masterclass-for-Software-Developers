@@ -5,11 +5,9 @@ public class GroceryList {
     private ArrayList<String> groceryList = new ArrayList<String>();
 
     public void addGroceryItem(String item) {
-
         groceryList.add(item);
     }
-
-
+    
     public ArrayList<String> getGroceryList() {
         return groceryList;
     }
@@ -26,8 +24,8 @@ public class GroceryList {
         if(position >= 0) {
             modifyGroceryItem(position, newItem);
         }
-
     }
+
     private void modifyGroceryItem(int position, String newItem) {
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position+1) + " has been modified.");
@@ -52,7 +50,6 @@ public class GroceryList {
         if(position >=0) {
             return true;
         }
-
         return false;
     }
 }
