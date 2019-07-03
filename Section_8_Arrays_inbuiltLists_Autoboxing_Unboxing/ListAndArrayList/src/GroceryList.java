@@ -7,7 +7,7 @@ public class GroceryList {
     public void addGroceryItem(String item) {
         groceryList.add(item);
     }
-    
+
     public ArrayList<String> getGroceryList() {
         return groceryList;
     }
