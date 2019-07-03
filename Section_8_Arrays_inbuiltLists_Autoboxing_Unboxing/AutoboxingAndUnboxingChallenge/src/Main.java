@@ -18,6 +18,13 @@ public class Main {
         bank.addAnotherTransaction("Brooklyn", "Mikayla", 100.50);
         bank.addAnotherTransaction("Columbus", "Stephanie", 50.5);
 
+        // Testing when branch does not exist
+        bank.addAnotherTransaction("wdnjwdn", "Mikayla", 60.0);
+
+        // When customer does not exist
+        bank.addAnotherTransaction("Brooklyn", "Stephanie", 90.0);
+
+
         bank.printCustomerList("Brooklyn");
     }
 }
