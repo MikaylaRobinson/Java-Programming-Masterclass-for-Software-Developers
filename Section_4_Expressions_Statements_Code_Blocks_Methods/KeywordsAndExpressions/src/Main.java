@@ -9,7 +9,5 @@ public class Main {
         if(highScore == 50) {
             System.out.println("This is also an expression");
         }
-
-
     }
 }
