@@ -3,9 +3,6 @@ package com.example.game;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by dev on 1/10/15.
- */
 public class Monster implements ISaveable {
     private String name;
     private int hitPoints;
