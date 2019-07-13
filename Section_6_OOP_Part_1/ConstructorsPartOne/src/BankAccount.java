@@ -6,7 +6,6 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
-    // Creating my constructor
     public BankAccount () {
         this(99999, 100.55, "default customerName", "default email" , "default phoneNumber");
     }
@@ -22,7 +21,6 @@ public class BankAccount {
         this(88888, 120, customerName, email, phoneNumber);
     }
 
-    // Setters for all fields
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
@@ -43,7 +41,6 @@ public class BankAccount {
         this.phoneNumber = phoneNumber;
     }
 
-    // Getters for all fields
     public int getAccountNumber() {
         return this.accountNumber;
     }
@@ -64,7 +61,6 @@ public class BankAccount {
         return this.phoneNumber;
     }
 
-    // Method for deposit
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + " made. New balance is " + this.balance);
