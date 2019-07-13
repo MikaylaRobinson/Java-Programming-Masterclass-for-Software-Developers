@@ -77,7 +77,7 @@ public class Main {
     public static void searchForItem() {
         System.out.print("Item to search for: ");
         String searchItem = scanner.nextLine();
-        if(groceryList.onFile(searchItem)) {
+        if (groceryList.onFile(searchItem)) {
             System.out.println("Found " + searchItem);
         } else {
             System.out.println(searchItem + ", not on file.");
