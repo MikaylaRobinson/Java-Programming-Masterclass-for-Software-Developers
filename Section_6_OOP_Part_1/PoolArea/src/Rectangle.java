@@ -4,7 +4,7 @@ public class Rectangle {
     private double length;
 
     public Rectangle(double width, double length) {
-        if (width <0 ) {
+        if (width < 0) {
             width = 0;
         }
         if (length < 0) {
