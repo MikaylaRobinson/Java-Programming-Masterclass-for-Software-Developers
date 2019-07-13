@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-	    int myIntValue = 10;
-	    int anotherIntValue = myIntValue;
+        int myIntValue = 10;
+        int anotherIntValue = myIntValue;
 
         System.out.println("mtIntValue = " + myIntValue);
         System.out.println("anotherIntValue = " + anotherIntValue);
@@ -20,7 +20,7 @@ public class Main {
         System.out.println("myIntArray = " + Arrays.toString(myIntArray));
         System.out.println("anotherArray = " + Arrays.toString(anotherArray));
 
-        //Since both variables reference the same array, this change will be reflected when printing both variables
+        // Since both variables reference the same array, this change will be reflected when printing both variables
         anotherArray[0] = 1;
 
         System.out.println("after change myIntArray = " + Arrays.toString(myIntArray));
