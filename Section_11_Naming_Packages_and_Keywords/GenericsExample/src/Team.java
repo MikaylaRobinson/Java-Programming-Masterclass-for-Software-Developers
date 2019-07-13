@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 public class Team<T extends Player> implements Comparable<Team<T>> {
     private String name;
     int played = 0;
@@ -38,10 +37,10 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
 
         String message;
 
-        if(ourScore > theirScore) {
+        if (ourScore > theirScore) {
             won++;
             message = " beat ";
-        } else if(ourScore == theirScore) {
+        } else if (ourScore == theirScore) {
             tied++;
             message = " drew with ";
 
@@ -50,7 +49,7 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
             message = " lost to ";
         }
         played++;
-        if(opponent != null) {
+        if (opponent != null) {
             System.out.println(this.getName() + message + opponent.getName());
             opponent.matchResult(null, theirScore, ourScore);
         }
@@ -62,7 +61,7 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
 
     @Override
     public int compareTo(Team<T> team) {
-        if(this.ranking() > team.ranking()) {
+        if (this.ranking() > team.ranking()) {
             return -1;
         } else if(this.ranking() < team.ranking()) {
             return 1;
@@ -71,26 +70,3 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
