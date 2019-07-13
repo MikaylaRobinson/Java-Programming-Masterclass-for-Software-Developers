@@ -99,10 +99,5 @@ public class Main {
         // 5. Display "Total was over the limit" if remainder is equal to 20 or less
         if (remainder <= 20)
             System.out.println("Total was over the limit");
-
-
-
-
-
     }
 }
