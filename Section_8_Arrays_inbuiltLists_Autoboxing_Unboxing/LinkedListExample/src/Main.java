@@ -110,7 +110,6 @@ public class Main {
                 case 5:
                     printMenu();
                     break;
-
             }
         }
     }

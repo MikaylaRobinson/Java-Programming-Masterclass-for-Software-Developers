@@ -14,7 +14,7 @@ public class Album {
     }
 
     public boolean addSong(String title, double duration) {
-        if(findSong(title) == null) {
+        if (findSong(title) == null) {
             this.songs.add(new Song(title, duration));
             return true;
         }
@@ -42,7 +42,7 @@ public class Album {
 
     public boolean addToPlaylist(String title, LinkedList<Song> playList) {
         Song checkedSong = findSong(title);
-        if(checkedSong != null) {
+        if (checkedSong != null) {
             playList.add(checkedSong);
             return true;
         }
