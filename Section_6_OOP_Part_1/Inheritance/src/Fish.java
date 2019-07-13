@@ -12,20 +12,16 @@ public class Fish extends Animal{
     }
 
     private void rest() {
-
     }
 
     private void moveMuscles() {
-
     }
 
     private void moveBackFin() {
-
     }
     private void swim(int speed) {
         moveMuscles();
         moveBackFin();
         super.move(speed);
     }
-
 }
