@@ -17,19 +17,32 @@ public class Main {
         locations.put(5, new Location(5, "forest"));
 
         locations.get(1).addExit("W", 2);
+        locations.get(1).addExit("WEST", 2);
         locations.get(1).addExit("E", 3);
+        locations.get(1).addExit("EAST", 3);
         locations.get(1).addExit("S", 4);
+        locations.get(1).addExit("SOUTH", 4);
         locations.get(1).addExit("N", 5);
+        locations.get(1).addExit("NORTH", 5);
 
         locations.get(2).addExit("N", 5);
+        locations.get(2).addExit("NORTH", 5);
 
         locations.get(3).addExit("W", 2);
+        locations.get(3).addExit("WEST", 2);
+
 
         locations.get(4).addExit("N", 5);
+        locations.get(4).addExit("NORTH", 5);
         locations.get(4).addExit("W", 2);
+        locations.get(4).addExit("WEST", 2);
+
 
         locations.get(5).addExit("S", 4);
+        locations.get(5).addExit("SOUTH", 4);
         locations.get(5).addExit("W", 2);
+        locations.get(5).addExit("WEST", 2);
+
 
         int loc = 1;
         while (true) {
@@ -40,15 +53,24 @@ public class Main {
             Map<String, Integer> exits = locations.get(loc).getExits();
             System.out.print("Available exits are ");
             for (String exit: exits.keySet()) {
-                System.out.print(exit + ", ");
+                if (exit.length() == 1) {
+                    System.out.print(exit + ", ");
+                }
             }
             System.out.println();
 
             String direction = scanner.nextLine().toUpperCase();
+            String [] splitDirection = direction.split(" ");
+            for ( String word : splitDirection) {
+                if (exits.containsKey(word)) {
+                    direction = word;
+                    break;
+                }
+            }
             if (exits.containsKey(direction)) {
                 loc = exits.get(direction);
             } else {
-                System.out.println("You cannot go that direction");
+                System.out.println("You cannot go in that direction");
             }
         }
     }
