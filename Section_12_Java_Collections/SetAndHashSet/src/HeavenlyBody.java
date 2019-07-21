@@ -7,6 +7,7 @@ public final class HeavenlyBody {
     private final double orbintalPeriod;
     private final Set<HeavenlyBody> satellites;
 
+
     public HeavenlyBody(String name, double orbintalPeriod) {
         this.name = name;
         this.orbintalPeriod = orbintalPeriod;
