@@ -21,7 +21,7 @@ public class Main {
             System.out.println("Is directory = " + attrs.isDirectory());
             System.out.println("Is regular file = " + attrs.isRegularFile());
 
-        } catch(IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
