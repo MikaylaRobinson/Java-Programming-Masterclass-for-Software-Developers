@@ -7,6 +7,8 @@ public class Main {
     private static ReentrantLock lock = new ReentrantLock(true);
 
     public static void main(String[] args) {
+        // The threads run in order based on priority. The lower priority threads
+        // must wait until the previous thread is finished to begin.
 	    Thread t1 = new Thread(new Worker(ThreadColor.ANSI_RED), "Priority 10");
         Thread t2 = new Thread(new Worker(ThreadColor.ANSI_BLUE), "Priority 8");
         Thread t3 = new Thread(new Worker(ThreadColor.ANSI_GREEN), "Priority 6");
