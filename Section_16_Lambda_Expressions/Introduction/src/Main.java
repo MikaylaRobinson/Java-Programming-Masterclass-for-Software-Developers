@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	    new Thread(new Runnable() {
+        new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("Printing from the Runnable");
@@ -15,10 +15,10 @@ public class Main {
             }
         }).start();
 
-	    Employee john = new Employee("John Doe", 30);
-	    Employee jane = new Employee("Jane Doe", 21);
-	    Employee joe = new Employee("Joe Smith", 40);
-	    Employee jack = new Employee("Jack Smith", 22);
+        Employee john = new Employee("John Doe", 30);
+        Employee jane = new Employee("Jane Doe", 21);
+        Employee joe = new Employee("Joe Smith", 40);
+        Employee jack = new Employee("Jack Smith", 22);
 
         List<Employee> employees = new ArrayList<>();
         employees.add(joe);
