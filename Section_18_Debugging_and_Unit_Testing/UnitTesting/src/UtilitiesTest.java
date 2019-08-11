@@ -35,7 +35,6 @@ public class UtilitiesTest {
         assertEquals("A", utilities.removePairs("A"));
         // When the input is null
         assertNull(null, utilities.removePairs(null) );
-
     }
 
     @org.junit.Test
