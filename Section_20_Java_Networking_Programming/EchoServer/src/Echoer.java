@@ -23,8 +23,17 @@ public class Echoer extends Thread {
 
             while (true) {
                 String echoString = input.readLine();
+                System.out.println("Received client input : " + echoString);
                 if (echoString.equals("exit")) {
                     break;
+                }
+
+                // This 15 second delay is here for the purpose of simulating the timeout on
+                // the client end. The client application is terminated by a 5 second timeout.
+                try {
+                    Thread.sleep(15000);
+                } catch (InterruptedException e) {
+                    System.out.println("Thread interrupted");
                 }
                 // if the client has entered any message other than the command to exit,
                 // the message will be sent back to the client

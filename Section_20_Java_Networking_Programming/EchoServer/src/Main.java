@@ -17,6 +17,5 @@ public class Main {
         } catch (IOException e) {
             System.out.println("Server exception " + e.getMessage());
         }
-
     }
 }
