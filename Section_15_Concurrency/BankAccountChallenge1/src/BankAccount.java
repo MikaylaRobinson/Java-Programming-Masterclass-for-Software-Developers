@@ -24,6 +24,8 @@ public class BankAccount {
     public void deposit(double amount) {
         boolean status = false;
         try {
+            // With try lock, if the lock is not available, the thread will wait the time given
+            // in the parameter for the lock to become available before timing out
             if (lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
                 try {
                     balance += amount;
