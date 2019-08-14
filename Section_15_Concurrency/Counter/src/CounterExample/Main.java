@@ -32,6 +32,8 @@ class Countdown {
                 color = ThreadColor.ANSI_GREEN;
         }
 
+        // Being synchronized keeps this code locked while a thread is executing the code.
+        // One the first thread is done, the second may begin.
         synchronized (this) {
         for (i = 10; i > 0; i--) {
             System.out.println(color + Thread.currentThread().getName() + ": i =" + i);
