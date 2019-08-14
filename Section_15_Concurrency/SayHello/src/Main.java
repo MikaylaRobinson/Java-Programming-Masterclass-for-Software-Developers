@@ -30,6 +30,8 @@ public class Main {
             return name;
         }
 
+        // Since these are synchronized, only one person can do the actions within at once.
+        // They must wait for the first person to finish saying hello before they can
         public synchronized void sayHello(PolitePerson person) {
             System.out.format("%s : %s" + " has said hello to me!%n", this.name, person.getName());
             person.sayHelloBack(this);
