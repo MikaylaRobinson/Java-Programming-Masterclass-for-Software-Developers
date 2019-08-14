@@ -1,6 +1,11 @@
 import java.util.Map;
 
 public class Main {
+    // This project creates a mock shopping basket that items from the store
+    // can be added to. The items come from the stocklist that is made up of
+    // stock items. This project uses the features of the Map interface to keep
+    // track of the store items.
+
     private static StockList stockList = new StockList();
 
     public static void main(String[] args) {

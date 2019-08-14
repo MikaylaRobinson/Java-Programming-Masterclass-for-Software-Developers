@@ -7,6 +7,8 @@ public class StockList {
     private final Map<String, StockItem> list;
 
     public StockList() {
+        // Using a linked hash map gives the ability to guarantee the order of iteration.
+        // It is a collection of key/value pairs connected as a doubly linked list
         this.list = new LinkedHashMap<>();
     }
 
