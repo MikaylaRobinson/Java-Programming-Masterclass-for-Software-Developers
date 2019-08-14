@@ -4,6 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Message message = new Message();
+        // These threads are designed to execute one after another
+        // The first class, Writer, in the first thread, outputs a message that is
+        // a required parameter of the Reader class code being executed.
         (new Thread(new Writer(message))).start();
         (new Thread(new Reader(message))).start();
     }
