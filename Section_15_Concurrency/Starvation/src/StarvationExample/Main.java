@@ -29,6 +29,8 @@ public class Main {
 
     }
 
+    // Worker class that uses a lock to ensure that code can only be accessed by one
+    // of the above threads at one time
     private static class Worker implements Runnable {
         private int runCount = 1;
         private String threadColor;
