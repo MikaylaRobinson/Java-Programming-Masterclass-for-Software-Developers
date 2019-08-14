@@ -26,6 +26,8 @@ public class Main {
         employees.add(john);
         employees.add(jack);
 
+        // This code can be condensed. The Collections.sort below is a using
+        // lambda expressions to make this code more concise. 
 //        Collections.sort(employees, new Comparator<Employee>() {
 //            @Override
 //            public int compare(Employee employee1, Employee employee2) {
