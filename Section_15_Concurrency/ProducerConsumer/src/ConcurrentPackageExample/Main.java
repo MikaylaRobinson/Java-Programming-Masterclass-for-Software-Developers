@@ -6,6 +6,9 @@ import java.util.Random;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
+// The executor service defined a thread-pool and then executes the Runnable tasks.
+// The executor service is the alternative to creating and running many individual threads,
+// and it runs the Runnable tasks asynchronously.
 public class Main {
 
     public static final String EOF = "EOF";
@@ -84,8 +87,6 @@ class MyConsumer implements Runnable {
     }
 
     public void run() {
-
-
         while (true) {
             synchronized (buffer) {
                 try {
@@ -99,8 +100,6 @@ class MyConsumer implements Runnable {
                     } else {
                         System.out.println(color + "Removed" + buffer.take());
                     }
-
-
                 } catch (InterruptedException e) {
                 }
             }
