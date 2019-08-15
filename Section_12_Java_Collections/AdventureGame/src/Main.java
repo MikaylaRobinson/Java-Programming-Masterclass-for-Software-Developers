@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    // This code is recycled in other projects from this section
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
     public static void main(String[] args) {
