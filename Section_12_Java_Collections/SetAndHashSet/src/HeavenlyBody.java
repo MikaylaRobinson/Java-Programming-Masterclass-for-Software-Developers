@@ -5,6 +5,9 @@ public final class HeavenlyBody {
 
     private final String name;
     private final double orbintalPeriod;
+    // In this case, a set makes since because it is a collection that does not allow duplicate
+    // values. There can only be one planet with a certain name. Also, sets are unordered,
+    // and in this situation, it is not necessary to have an order.
     private final Set<HeavenlyBody> satellites;
 
 
