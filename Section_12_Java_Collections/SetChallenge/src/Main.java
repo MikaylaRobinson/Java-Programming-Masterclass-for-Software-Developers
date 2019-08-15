@@ -5,7 +5,11 @@ import java.util.Set;
 
 public class Main {
 
+    // The HashMap allows for adding an instance of a Heavenly body along with a name (the pair)
+    // to be part of the solar system.
     private static Map<String, HeavenlyBody> solarSystem = new HashMap<>();
+    // The HashSet stores a collection of Objects. The fields of this object
+    // are defined in the HeavenlyBody class.
     private static Set<HeavenlyBody> planets = new HashSet<>();
 
     public static void main(String[] args) {
