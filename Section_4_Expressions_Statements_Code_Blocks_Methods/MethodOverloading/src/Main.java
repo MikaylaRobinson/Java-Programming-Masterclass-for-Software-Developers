@@ -1,5 +1,7 @@
 public class Main {
 
+    // Method overloading is writing methods with the same name, but different parameters
+
     public static void main(String[] args) {
         int newScore = calculateScore("Tim", 500);
         System.out.println("New score is " + newScore);

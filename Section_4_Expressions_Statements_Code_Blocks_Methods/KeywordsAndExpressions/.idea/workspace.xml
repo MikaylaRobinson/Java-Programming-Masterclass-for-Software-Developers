@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8b6a98e-bf32-4227-bced-a09e464cbec8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Section_3_Variables_Datatypes_and_Operators/Operators/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Section_3_Variables_Datatypes_and_Operators/Operators/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Section_3_Variables_Datatypes_and_Operators/Strings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Section_3_Variables_Datatypes_and_Operators/Strings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AreaCalculator/AreaCalculator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AreaCalculator/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="b8b6a98e-bf32-4227-bced-a09e464cbec8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +56,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -111,7 +105,7 @@
   <component name="ToolWindowManager">
     <frame x="2046" y="18" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
