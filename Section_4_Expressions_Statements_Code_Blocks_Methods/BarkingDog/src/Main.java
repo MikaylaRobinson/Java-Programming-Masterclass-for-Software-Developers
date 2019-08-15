@@ -1,5 +1,8 @@
 public class Main {
 
+    // Coding exercise 3 in course. Letting you know if you should wake up
+    // at night if the dog is barking. Wake up if the dog is barking before 8 or
+    // after 22 hours (return true)
     public static void main(String[] args) {
         shouldWakeUp(true, 1);
         shouldWakeUp(false, 2);
