@@ -1,5 +1,8 @@
 public class EnhancedPlayer {
 
+    // Encapsulation is when fields/variables are only able to be accessed by methods
+    // of their class. These fields set to private can only be accessed through the public
+    // methods below.
     private String name;
     private int health = 100;
     private String weapon;
