@@ -8,6 +8,7 @@ public class Locations implements Map<Integer, Location> {
 
     public static void main(String[] args) throws IOException {
 
+        // RandomAccessFile creates a file stream to read from and write to the file specified in the arguments
         try (RandomAccessFile rao = new RandomAccessFile("locations_rand.dat", "rwd")) {
             rao.writeInt(locations.size());
             int indexSize = locations.size() * 3 * Integer.BYTES;
