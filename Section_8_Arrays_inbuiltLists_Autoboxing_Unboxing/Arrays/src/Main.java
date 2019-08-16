@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+        // This is creating an Array with 25 elements
         int[] myIntArray = new int[25];
 
         // Individual positions can be set like this
