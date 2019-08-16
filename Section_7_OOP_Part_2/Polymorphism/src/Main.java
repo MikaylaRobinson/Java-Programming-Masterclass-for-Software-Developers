@@ -1,3 +1,7 @@
+// Polymorphism is a when an object can take on many forms.
+// This is most commonly seen when an object can be referenced as an
+// object of its own class or as an object of a parent class.
+
 class Movie {
 
     private String name;
