@@ -10,6 +10,7 @@ public class BankAccount {
         this(99999, 100.55, "default customerName", "default email" , "default phoneNumber");
     }
 
+    // A constructor initializes objects. It is called when an object of the class is created (BankAccount bankAccount = new BankAccount())
     public BankAccount(int accountNumber, double balance, String customerName, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
         this.balance = balance;
