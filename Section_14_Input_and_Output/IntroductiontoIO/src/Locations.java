@@ -7,6 +7,7 @@ public class Locations implements Map<Integer, Location> {
 
     public static void main(String[] args) throws IOException {
 
+        // BufferedWriter writes text from buffered characters for efficiency
         try (BufferedWriter locFile = new BufferedWriter(new FileWriter("locations.txt"));
             BufferedWriter dirFile = new BufferedWriter(new FileWriter("directions.txt"))) {
             for (Location location : locations.values()) {
@@ -20,6 +21,7 @@ public class Locations implements Map<Integer, Location> {
         }
     }
     static {
+        // Buffered readers read text and buffer characters for efficency.
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader("locations_big.txt")))) {
             scanner.useDelimiter(",");
             while (scanner.hasNextLine()) {
