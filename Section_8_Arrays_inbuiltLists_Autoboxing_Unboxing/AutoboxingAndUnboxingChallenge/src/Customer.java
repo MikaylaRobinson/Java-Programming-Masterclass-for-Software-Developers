@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class Customer {
 
     private String name;
+    // This project uses autoboxing and unboxing which is the conversion between
+    // primitive types like double to their object wrapper classes like Double.
     private ArrayList<Double> TransactionList = new ArrayList<Double>();
 
     public Customer(String name, double initialDeposit) {
