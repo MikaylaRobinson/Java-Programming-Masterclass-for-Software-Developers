@@ -1,5 +1,7 @@
 public class Animal {
-
+    // The OOP concept of inheritance is where the properties of this parent class,
+    // meaning the fields and methods, are passed on to child classes. Animal is the parent
+    // class and it is extended by the child class for Fish and Dog.
     private String name;
     private int brain;
     private int body;
