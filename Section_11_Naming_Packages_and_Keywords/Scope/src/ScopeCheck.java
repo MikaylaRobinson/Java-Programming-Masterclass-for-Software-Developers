@@ -1,6 +1,9 @@
 public class ScopeCheck {
 
+    // Variables defined within a class are member variables
+    // This public member variable can be accessed anywhere
     public int publicVar = 0;
+    // This private member variable can only be accessed within this class
     private int var1 = 1;
 
     public ScopeCheck() {
@@ -12,6 +15,8 @@ public class ScopeCheck {
     }
 
     public void timesTwo() {
+        // Variables defined within a method are local variables
+        // These are only accessible within the method
         int var2 = 2;
         for (int i = 0; i < 10; i++) {
             System.out.println(i + " times two is " + i * var2);
