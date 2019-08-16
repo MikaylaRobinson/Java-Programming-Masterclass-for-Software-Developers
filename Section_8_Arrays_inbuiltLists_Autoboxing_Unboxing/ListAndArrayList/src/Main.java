@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    // ArrayList is an ordered list that can contain duplicates. There are build in
+    // methods that allow you to remove and add items to the list as seen in this project.
     private static Scanner scanner = new Scanner(System.in);
     private static GroceryList groceryList = new GroceryList();
 
