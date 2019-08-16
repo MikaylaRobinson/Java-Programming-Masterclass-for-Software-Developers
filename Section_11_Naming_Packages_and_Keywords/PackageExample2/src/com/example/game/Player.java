@@ -1,4 +1,7 @@
 package com.example.game;
+// These classes and interface for an adventure game are all collected in a package.
+// The test portion of the project is a different portion of the package.
+// The structure of the package allows us to group by related classes and interfaces.
 
 import java.util.ArrayList;
 import java.util.List;
