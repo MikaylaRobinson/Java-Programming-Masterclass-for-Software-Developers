@@ -1,3 +1,8 @@
+// An abstract class is used as a superclass that cannot be used to form an object
+// The class is meant to be implemented to define general characteristics.
+// This makes sense to use if you will have multiple classes that all share common traits.
+// Abstract classes are normally an overall idea/descriptor that many classes will fit under.
+
 public abstract class ListItem {
 
     protected ListItem rightLink = null;
