@@ -2,9 +2,11 @@ import java.util.*;
 
 public class Theatre {
 
+    // Comparator is used to sort the objects of the class.
     private final String theatreName;
     private List<Seat> seats = new ArrayList<>();
 
+    // Here the seats are sorted by price.
     static final Comparator<Seat> PRICE_ORDER = new Comparator<Seat>() {
         @Override
         public int compare(Seat seat1, Seat seat2) {
