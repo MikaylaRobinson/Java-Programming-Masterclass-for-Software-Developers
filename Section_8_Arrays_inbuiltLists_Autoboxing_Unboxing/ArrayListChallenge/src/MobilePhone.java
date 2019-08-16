@@ -1,4 +1,8 @@
 import java.util.ArrayList;
+// An ArrayList is an ordered collection of elements that can contain duplicates.
+// This contact list project uses some of the methods available to ArrayLists
+// in order to append new contacts to the end of the list, remove certain contacts,
+// and retrieve contacts by index. 
 
 public class MobilePhone {
 
