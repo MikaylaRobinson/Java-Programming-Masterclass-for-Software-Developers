@@ -10,9 +10,7 @@ public class Main {
 	    int[] sorted = sortIntegers(myIntArray);
 	    printArray(sorted);
     }
-
-
-
+    
     public static int[] getIntegers(int number) {
         System.out.println("Enter " + number + " integer values\r");
         int[] values = new int[number];
