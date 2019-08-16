@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+// This project uses generics in order to re-use all of the same code regardless of the sport.
+// Each of the methods can then be used for each type of player/team
+// When you are creating a team, you need to define the type of players that make up the team.
 public class Team<T extends Player> implements Comparable<Team<T>> {
     private String name;
     int played = 0;

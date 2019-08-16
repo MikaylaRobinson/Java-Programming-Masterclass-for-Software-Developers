@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+        // Here we are creating a league that will be made up of teams of football players.
         League<Team<FootballPlayer>> footballLeague = new League<>("AFL");
         Team<FootballPlayer> adelaideCrows = new Team<>("Adelaide Crows");
         Team<FootballPlayer> melbourne = new Team<>("Melbourne");
@@ -22,10 +23,13 @@ public class Main {
 
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
+
+        // Raw types occur when you do not give a generics class a type argument.
+        // Here, we are creating a team, but we do not define what type of players
+        // make up the team.
         Team rawTeam = new Team("Raw Team");
         rawTeam.addPlayer(beckham); // unchecked warning
         rawTeam.addPlayer(pat);     // unchecked warning
-
         footballLeague.add(rawTeam);     // unchecked warning
 
         League<Team> rawLeague = new League<>("Raw");
