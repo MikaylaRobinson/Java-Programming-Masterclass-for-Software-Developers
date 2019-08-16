@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+// A linked list contains elements called nodes. All nodes contain their data and addresses.
+// A node points to the address of the next node in the list. This allows each element to be stored
+// as a separate object.
+
 public class Album {
 
     private String name;
